@@ -84,4 +84,4 @@ MIT — see [`LICENSE`](./LICENSE)
 
 ## Designed by
 
-**Aislin Lin** · [LinkedIn](https://www.linkedin.com/in/aislin-lin/)
+**Aislin Lin** · [LinkedIn](https://www.linkedin.com/in/aislinl/)
