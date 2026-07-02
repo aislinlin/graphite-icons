@@ -1,0 +1,28 @@
+# Private reference materials — never publish
+_private_references/
+*.private.svg
+*.reference.svg
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Node (in case tooling added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sketch / Figma auto-saved backups
+*.fig-bak
+*.sketch-bak
