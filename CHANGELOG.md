@@ -6,6 +6,17 @@ Format: [Semantic Versioning](https://semver.org/). Pre-1.0 releases indicate dr
 
 ---
 
+## [0.7] — 2026-07-07
+
+### Added
+- **§4.5 Sub-pixel polish** (Optional / Advanced) — manual polish technique for symmetric 1.5px stroke edge rendering. NOT applied by skill by default. Reference example in `icn_battery` polished version.
+- Reference research: technique is industry-niche, not documented in Material Icons / Feather / Lucide / IBM Carbon.
+
+### Rationale
+- Preserves skill's auto-generation simplicity
+- Documents craft-level knowledge without over-engineering the ruleset
+- Signals designer's depth without forcing overly complex generation rules
+
 ## [0.6] — 2026-07-02
 
 ### Added

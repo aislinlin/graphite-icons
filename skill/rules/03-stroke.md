@@ -77,6 +77,27 @@ Or for small circular dots:
 
 ---
 
+## §4.5 Sub-pixel polish (Optional — DO NOT auto-apply)
+
+**Status**: Optional advanced technique. **The skill does NOT apply this automatically.**
+
+**Problem**: 1.5px stroke outlined as evenodd produces asymmetric edge rendering — outer edge (integer pixel) crisp, inner edge (half-pixel) soft. Only visible at 200%+ zoom.
+
+**Technique**: Shift outer/inner boundaries by 0.25 units perpendicular to edge. Produces symmetric 25% / 100% / 25% pixel coverage.
+
+**Why skill should NOT apply**:
+- Requires judgment about which edges are "stroke edges" vs "detail edges"
+- Adds sub-pixel decimals (0.25 / 0.75) throughout coordinates — makes SVG hard to read
+- Imperceptible at 24px display; only pro-visible at 48px+ or heavy zoom
+- Hard to auto-enforce consistently
+- Not widely used in Material Icons, Feather, Lucide, IBM Carbon
+
+**Reserved for**: Manual finishing pass by designer during production polish. Reference: `icn_battery` has manually-polished version with 0.25 shifts.
+
+**AI generation instruction**: When generating icons, use standard integer/half-pixel coordinates (§4.4). Do NOT introduce 0.25 sub-pixel shifts. If user explicitly requests "polished" or "pro-render" quality, note that this is a manual polish step outside skill scope.
+
+---
+
 ## Stroke construction order (design phase)
 
 When designing (not applicable to AI generation, but relevant to explain rationale):
